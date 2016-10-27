@@ -1,14 +1,10 @@
 package demoverifyrest;
 
 import java.awt.SystemColor;
-import javax.ws.rs.client.*;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.client.Entity;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import org.json.JSONObject;
 
 
  /** 
@@ -353,7 +349,6 @@ public class FormDemoVerify extends javax.swing.JFrame {
         Client client1 = ClientBuilder.newClient();
         WebTarget target = client1.target("http://ec2-46-137-97-173.eu-west-1.compute.amazonaws.com/smrest/webresources/verify");
         
-        JSONObject inputJsonObj = new JSONObject();
         // valorizzazione input
         // per l'esempio viene valorizzato un insieme minimo dei parametri
         target =target.queryParam("Key", jTxtKey.getText());
@@ -367,8 +362,6 @@ public class FormDemoVerify extends javax.swing.JFrame {
             
         // chiamata al servizio
         outVerify= target.request(MediaType.APPLICATION_JSON).get(VerifyResponse.class);
-       
-       
         
         // lettura campi generali del risultato
         jTxtEsito.setText(String.valueOf(outVerify.Norm));
