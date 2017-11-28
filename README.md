@@ -1,6 +1,6 @@
-# Webservice di verifica e correzione dei comuni e indirizzi italiani
+# Comuni italiani e stradario. webservice di verifica e correzione.
 ## Demo Verify Rest Java
-Demo Java per l'utilizzo del ws rest VERIFY di verifica e correzione dei comuni e indirizzi italiani. Gratuito per le prime 250 chiamate mensili.
+Comuni italiani e stradario , demo Java per l'utilizzo del ws rest VERIFY di verifica e correzione. Gratuito per le prime 250 chiamate mensili.
 
 ### Ambiente di sviluppo
   - NetBeans IDE 8.1
