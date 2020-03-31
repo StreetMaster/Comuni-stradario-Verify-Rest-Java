@@ -8,7 +8,7 @@ Comuni italiani e stradario, soluzione Java per l'utilizzo del ws rest VERIFY di
 
 ### Endpoint
 ```
-    http://ec2-46-137-97-173.eu-west-1.compute.amazonaws.com/smrest/webresources/verify
+    https://streetmaster.streetmaster.it/smrest/webresources/verify
 ```
 Il protocollo di comunicazione e' in formato JSON 
 
