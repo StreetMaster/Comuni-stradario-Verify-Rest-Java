@@ -12,12 +12,12 @@ import javax.ws.rs.core.MediaType;
   * Esempio di utilizzo del servizio WS VERIFY per la verifica e la normalizzazione degli indirizzi italiani realizzato da StreetMaster Italia 
   *  
   * L'end point del servizio è 
-  *     http://ec2-46-137-97-173.eu-west-1.compute.amazonaws.com/smrest/verify
+  *     https://streetmaster.streetmaster.it/smrest/verify
   *     
   * Per l'utilizzo registrarsi sul sito http://streetmaster.it e richiedere la chiave per il servizio VERIFY 
   * Il protocollo di comunicazione e' in formato JSON
   * 
-  *  2016 - Software by StreetMaster (c)
+  *  2020 - Software by StreetMaster (c)
   */
 
 public class FormDemoVerify extends javax.swing.JFrame {
@@ -347,7 +347,7 @@ public class FormDemoVerify extends javax.swing.JFrame {
     private void jBtnCallVerifyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCallVerifyActionPerformed
         // oggetto client per l'utilizzo del ws VERIFY
         Client client1 = ClientBuilder.newClient();
-        WebTarget target = client1.target("http://ec2-46-137-97-173.eu-west-1.compute.amazonaws.com/smrest/webresources/verify");
+        WebTarget target = client1.target("https://streetmaster.streetmaster.it/smrest/webresources/verify");
         
         // valorizzazione input
         // per l'esempio viene valorizzato un insieme minimo dei parametri
